@@ -78,7 +78,7 @@ class SettingController extends Controller
                 'displayOrderArray' => array_combine(range(1, 24), range(1, 24)),
                 'merchant' => config('fi.merchant'),
                 'skins' => Skins::lists(),
-                'resultsPerPage' => array_combine(range(15, 100, 5), range(15, 100, 5)),
+                'resultsPerPage' => array_combine(range(25, 100, 25), range(25, 100, 25)),
                 'amountDecimalOptions' => ['0' => '0', '2' => '2', '3' => '3', '4' => '4'],
                 'roundTaxDecimalOptions' => ['2' => '2', '3' => '3', '4' => '4'],
                 'companyProfiles' => CompanyProfile::getList(),

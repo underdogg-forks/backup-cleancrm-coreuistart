@@ -18,7 +18,7 @@ class Skins
 {
     public static function lists()
     {
-        $skins = Directory::listAssocContents(public_path('assets/dist/adminlte/css/skins'));
+        $skins = Directory::listAssocContents(public_path('public/assets/dist/adminlte/css/skins'));
 
         unset($skins['_all-skins.css'], $skins['_all-skins.min.css']);
 
